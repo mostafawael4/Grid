@@ -1,0 +1,69 @@
+@media only screen and (max-width: 992px) {
+  .container-fluid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'rotary rotary'
+      'rotary rotary'
+      'i-phone i-phone'
+      'i-phone i-phone'
+      'keyboard games'
+      'keyboard games'
+      'tv tv'
+      'tv tv'
+      'twitter cloud'
+      'twitter cloud'
+      'i_pad cloud'
+      'i_pad cloud'
+      'exp exp'
+      'display display';
+  }
+
+  .i_pad {
+    grid-area: i_pad;
+    background-color: #93b6b7;
+    background-image: url(../images/5bc2f42d5a5ed97dab707e7e_UX.png);
+    background-position: center 200px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container-fluid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'rotary rotary'
+      'i-phone i-phone'
+      'i-phone i-phone'
+      'keyboard games'
+      'tv tv'
+      'tv tv'
+      'twitter twitter'
+      'i_pad i_pad'
+      'cloud cloud'
+      'cloud cloud'
+      'exp exp'
+      'display display';
+  }
+
+  .i-phone .image{
+    width: 80%;
+    margin-top: 10px;
+  }
+  .texxt{
+    margin-top: 10px;
+  }
+
+  .display{
+    flex-direction: column;
+  }
+  .display .image{
+    width: 50%;
+  }
+  .display h3{
+    width: 80%;
+  }
+  
+}
